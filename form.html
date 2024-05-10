@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+<title> Karin Shop </title>
+<link rel = "stylesheet" href = "estilo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src = "https://kit.fontawesome.com/18b27d7909.js" crossorigin = "anonymous"></script>
+<script defer src="Index.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class = "header">
+<nav class = "nav">
+<img src="Logo.jpeg" width = "73" height = "73"></src>
+<button class = "toggle"><i class = "fa-solid fa-bars"></i></button>
+<ul class = "nav-menu">
+<li class = "nmi"> <h2> Karin's Shop </h2></li>
+<li class = "nmi"><a href = "index.html" class = "nml navml"> <i class="fa fa-home"></i> Inicio </a></li>
+<li class = "nmi"><a href = "localización.html" class = "nml navml"> <i class="fa-solid fa-location-dot"></i></i> Localizacion </a></li>
+<li class = "nmi"><a href = "productos.html" class = "nml navml"> <i class="fa-solid fa-cart-shopping"></i></i> Productos </a></li>
+<li class = "nmi"><a href = "comunidad.html" class = "nml navml"> <i class="fa-solid fa-people-roof"></i></i> Acerda de </a></li>
+<li class = "nmi"><a href = "adopción.html" class = "nml navml"> <i class="fa-solid fa-phone-volume"></i> Adopción </a></li>
+</ul>
+</nav>
+</header>
+<main>
+    <div class="container">
+        <h1>Registro</h1>
+        <h2>Ingresa tus datos para convertirte en miembro de la tienda</h2>
+        <br>
+        <form>
+            <input type="text" placeholder="Nombres" name="Nombres" required>
+            <input type="text" placeholder="Apellidos" name="Apellidos" required><br>
+            <br>
+            <input type="date" placeholder="Edad" name="Fecha de nacimiento" required>
+            <input type="email" placeholder="Correo Electrónico" name="email" required><br>
+            <br>
+            <input type="text" placeholder="Usuario" name="Usuario" required>
+            <input type="password" placeholder="Contraseña" name="Contraseña" required><br>
+            <br>
+            <h3>Genero - Opcional</h3>
+            <h4><input type="checkbox"> Masculino <input type="checkbox"> Femenino <input type="checkbox"> Otro <input type="checkbox"> ´Prefiero no decirlo  </h4>
+            <br>
+            <h3><input type="checkbox"> He leído y acepto los terminos y condiciones</h3>
+            <h3><input type="checkbox"> Deseo recibir promociones y novedades de la tienda</h3><br>
+            <input type="submit">
+        </form>
+    </div>
+</main>
+</body> 
+</html>

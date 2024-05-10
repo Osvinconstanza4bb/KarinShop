@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Fira-Sans";
+  src: url("Fira_Sans/FiraSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Andika";
+  src: url("Andika/Andika-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Actor";
+  src: url("Actor/Actor-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a18e7c;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 90px 20px 0;
+}
+
+h1 {
+  font-family: "Fira-Sans";
+  font-size: 60px;
+  color: #f3c14c;
+}
+
+h2 {
+  font-family: "Andika";
+  color: #f3c14c;
+}
+
+h3 {
+  font-family: "Fira-Sans";
+}
+
+.header {
+  background-color: #2d2125;
+  height: 73px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.navml {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nmi {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nml {
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.nml:hover {
+  background-color: bisque;
+  transition: 1;
+}
+
+.toggle {
+  background-color: #ab634a;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+.container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #a18e7c;
+    padding-top: 70px;
+  }
+
+  .header {
+    height: 73px;
+  }
+
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #ab634a;
+    position: fixed;
+    left: 0;
+    top: 73px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100%-60px);
+    overflow: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nmi {
+    line-height: 75px;
+  }
+
+  .nml:hover,
+  .nav-menu-linka {
+    background: none;
+    color: deepskyblue;
+  }
+
+  .toggle {
+    background-color: #ab634a;
+    border: none;
+    color: black;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+  }
+  .nav-menvi {
+    left: 0;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
